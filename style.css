@@ -1,0 +1,247 @@
+﻿/* =========================================
+   1. GLOBAL & BASIC PAGE STYLING
+   ========================================= */
+
+/* Set a clean font, comfortable line spacing, and subtle page background */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Make headings look clean and dark */
+h1,
+h2,
+h3 {
+    color: #222222;
+}
+
+/* Remove default underline from links and set standard link color */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Underline links when hovering over them */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Make images responsive so they never overflow their container */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   2. HEADER & NAVIGATION
+   ========================================= */
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Style the navigation links area */
+nav {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+nav a {
+    font-weight: bold;
+    margin: 0 6px;
+}
+
+
+/* =========================================
+   3. SECTIONS & HERO BANNER
+   ========================================= */
+
+/* Give each main section a white card-like background */
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Style the "Shop Now" call-to-action link as a button */
+section a[href="#featured"] {
+    display: inline-block;
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section a[href="#featured"]:hover {
+    background-color: #004d99;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   4. PRODUCT CARDS (Featured Section)
+   ========================================= */
+
+/* Style each product item as an individual box */
+article {
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+/* Strikethrough old price in red/grey */
+article s {
+    color: #888888;
+    margin-right: 8px;
+}
+
+/* Highlight new discounted price in green */
+article strong {
+    color: #2e7d32;
+    font-size: 1.1em;
+}
+
+/* Style the "Add to Cart" link inside product cards */
+article a {
+    display: inline-block;
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+article a:hover {
+    background-color: #218838;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   5. DEALS TABLE
+   ========================================= */
+
+/* Style the table so it looks neat and organized */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Merges adjacent cell borders */
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+/* Darker background for table headers */
+th {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Light alternating row color for readability */
+tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+
+/* =========================================
+   6. TESTIMONIALS (Customer Reviews)
+   ========================================= */
+
+/* Add a stylish left-border to quotes */
+blockquote {
+    margin: 15px 0;
+    padding: 12px 20px;
+    background-color: #f7f9fa;
+    border-left: 4px solid #0066cc;
+    border-radius: 0 6px 6px 0;
+}
+
+blockquote p {
+    font-style: italic;
+    margin: 0 0 6px 0;
+}
+
+
+/* =========================================
+   7. FORM & INPUTS (Newsletter)
+   ========================================= */
+
+/* Style standard text and email input fields */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 350px;
+    padding: 8px 12px;
+    margin-top: 4px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    /* Includes padding within width */
+}
+
+/* Highlight input field when clicked */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    /* Shows pointer finger on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #004d99;
+}
+
+
+/* =========================================
+   8. FOOTER
+   ========================================= */
+
+footer {
+    background-color: #222222;
+    color: #aaaaaa;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #dddddd;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
